@@ -1,0 +1,21 @@
+package = 'lua-term'
+version = '0.1-1'
+
+source = {
+  url = 'https://github.com/hoelzro/lua-term.git',
+}
+
+description = {
+  summary  = 'Terminal functions for Lua',
+  homepage = 'https://github.com/hoelzro/lua-term',
+  license  = "MIT/X11",
+}
+
+build = {
+  modules = {
+    ['term']        = 'term/init.lua',
+    ['term.colors'] = 'term/colors.lua',
+    ['term.core']   = 'core.c',
+  },
+  type = 'builtin',
+}
