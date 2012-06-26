@@ -5,9 +5,9 @@
 static int
 lua_isatty(lua_State *L)
 {
-    FILE *fp = (FILE *) luaL_checkudata(L, -1, LUA_FILEHANDLE);
+    FILE **fp = (FILE **) luaL_checkudata(L, -1, LUA_FILEHANDLE);
 
-    lua_pushboolean(L, isatty(fileno(fp)));
+    lua_pushboolean(L, isatty(fileno(*fp)));
     return 1;
 }
 
