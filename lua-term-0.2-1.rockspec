@@ -15,6 +15,7 @@ build = {
   modules = {
     ['term']        = 'term/init.lua',
     ['term.colors'] = 'term/colors.lua',
+    ['term.cursor'] = 'term/cursor.lua',
     ['term.core']   = 'core.c',
   },
   type = 'builtin',
