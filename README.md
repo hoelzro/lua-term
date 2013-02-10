@@ -17,9 +17,9 @@ Usage
 
     print(term.isatty(io.stdout)) -- true if standard output goes to the terminal
 
-    print(color.red 'hello')
-    print(color.red .. 'hello' .. color.reset)
-    print(color.red, 'hello', color.reset)
+    print(colors.red 'hello')
+    print(colors.red .. 'hello' .. colors.reset)
+    print(colors.red, 'hello', colors.reset)
 
     -- The following functions take an optional IO handle (like io.stdout);
     -- io.stdout is the default if you don't specify one
