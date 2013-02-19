@@ -35,6 +35,104 @@ Usage
     term.cursor.restore() -- restore position
 ```
 
+`term` Functions
+--------------
+
+Some functions in lua-term take an optional file handle argument; if this is
+not provided, `io.stdout` is used.
+
+### `term.clear([opt_file])`
+
+Clear the terminal's contents.
+
+### `term.cleareol([opt_file])`
+
+Clear from the current cursor position to the end of the current line.
+
+`term.colors` Values
+------------------
+
+The following values are available in `term.colors`:
+
+### Terminal Attributes
+
+  * reset
+  * clear (a synonym for reset)
+  * bright
+  * dim
+  * underscore
+  * blink
+  * reverse
+  * hidden
+
+### Foreground Colors
+
+  * black
+  * red
+  * green
+  * yellow
+  * blue
+  * magenta
+  * cyan
+  * white
+
+### Background Colors
+
+  * onblack
+  * onred
+  * ongreen
+  * onyellow
+  * onblue
+  * onmagenta
+  * oncyan
+  * onwhite
+
+Every value in `term.colors` may be used in several ways:
+
+### As a Function
+
+```lua
+print(colors.red 'hello')
+```
+
+### As a String
+
+```lua
+print(colors.red .. 'hello' .. colors.reset)
+print(colors.red, 'hello', colors.reset)
+```
+
+`term.cursor` Functions
+---------------------
+
+### `term.cursor.goto([opt_file], x, y)`
+
+Place the cursor at (`x`, `y`).
+
+### `term.cursor.goup([opt_file], nlines)`
+
+Moves the cursor up `nlines` lines.
+
+### `term.cursor.godown([opt_file], nlines)`
+
+Moves the cursor down `nlines` lines.
+
+### `term.cursor.goright([opt_file], ncols)`
+
+Moves the cursor right `ncols` columns.
+
+### `term.cursor.goleft([opt_file], ncols)`
+
+Moves the cursor left `ncols` columns.
+
+### `term.cursor.save([opt_file])`
+
+Saves the cursor position.
+
+### `term.cursor.restore([opt_file])`
+
+Restores the cursor position.
+
 Alternatives
 ------------
 
