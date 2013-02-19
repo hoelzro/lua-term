@@ -49,6 +49,10 @@ Clear the terminal's contents.
 
 Clear from the current cursor position to the end of the current line.
 
+### `term.isatty(file)`
+
+Returns `true` if `file` is a TTY; `false` otherwise.
+
 `term.colors` Values
 ------------------
 
