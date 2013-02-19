@@ -34,3 +34,10 @@ Usage
     term.cursor.save()    -- save position
     term.cursor.restore() -- restore position
 ```
+
+Alternatives
+------------
+
+If you are looking to simply provide coloration to a terminal application and would
+like to use a more "tag-like" API (ex. `colors '%{red}hello%{reset}'`), there is a Lua rock
+named ansicolors: https://github.com/kikito/ansicolors.lua
