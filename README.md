@@ -53,6 +53,9 @@ Clear from the current cursor position to the end of the current line.
 
 Returns `true` if `file` is a TTY; `false` otherwise.
 
+*NOTE*: This function has been deprecated in favor of luaposix's implementation.
+If you would like this functionality in the future, please use luaposix.
+
 `term.colors` Values
 ------------------
 
