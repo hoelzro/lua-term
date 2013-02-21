@@ -2,6 +2,7 @@
      - Add cursor functions.
      - Add clear functions.
      - Deprecate term.isatty.  Use luaposix instead.
+     - Add colors.default as a synonym for colors.reset.
 
 0.01 2012-06-25 23:30:00
      - Initial release.  Includes colors and isatty.

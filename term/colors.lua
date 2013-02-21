@@ -49,6 +49,7 @@ local colorvalues = {
     -- attributes
     reset = 0,
     clear = 0,
+    default = 0,
     bright = 1,
     dim = 2,
     underscore = 4,

@@ -65,6 +65,7 @@ The following values are available in `term.colors`:
 
   * reset
   * clear (a synonym for reset)
+  * default (a synonym for reset)
   * bright
   * dim
   * underscore
