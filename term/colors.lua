@@ -39,8 +39,6 @@ function colormt:__call(s)
     return self .. s .. colors.reset
 end
 
-colormt.__metatable = {}
-
 local function makecolor(value)
     return setmetatable({ value = schar(27) .. '[' .. tostring(value) .. 'm' }, colormt)
 end
