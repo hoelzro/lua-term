@@ -1,4 +1,8 @@
-0.02 *Pending*
+0.03 2014-04-02 08:00:00
+    - Fix syntax error for term.cursor.goto for Lua 5.2
+    - Add jump as an alias for goto
+
+0.02 2013-02-21 21:15:00
      - Add cursor functions.
      - Add clear functions.
      - Deprecate term.isatty.  Use luaposix instead.
