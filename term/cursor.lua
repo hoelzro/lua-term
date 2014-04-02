@@ -20,7 +20,7 @@
 
 local term = require 'term.core'
 
-return {
+local cursor = {
   ['goto'] = term.maketermfunc '%d;%dH',
   goup     = term.maketermfunc '%d;A',
   godown   = term.maketermfunc '%d;B',
@@ -29,3 +29,7 @@ return {
   save     = term.maketermfunc 's',
   restore  = term.maketermfunc 'u',
 }
+
+cursor.jump = cursor['goto']
+
+return cursor
