@@ -26,6 +26,7 @@ Usage
     term.clear()    -- clears the screen
     term.cleareol() -- clears from the cursor to the end of the line
     term.cursor.goto(1, 1)
+    term.cursor.jump(1, 1) -- jump is just an alias for goto
     term.cursor.goto(io.stdout, 1, 1)
     term.cursor.goup(1)
     term.cursor.godown(1)
@@ -116,6 +117,10 @@ print(colors.red, 'hello', colors.reset)
 ### `term.cursor.goto([opt_file], x, y)`
 
 Place the cursor at (`x`, `y`).
+
+### `term.cursor.jump([opt_file], x, y)`
+
+An alias for `term.cursor.goto`.
 
 ### `term.cursor.goup([opt_file], nlines)`
 
