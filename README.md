@@ -25,9 +25,10 @@ Usage
     -- io.stdout is the default if you don't specify one
     term.clear()    -- clears the screen
     term.cleareol() -- clears from the cursor to the end of the line
-    term.cursor.goto(1, 1)
+    --term.cursor.goto(1, 1) -- It will fail in Lua >= 5.2 because goto is a reserved word.
+    term.cursor['goto'](1, 1) -- This will work on Lua >= 5.2, please use jump instead
     term.cursor.jump(1, 1) -- jump is just an alias for goto
-    term.cursor.goto(io.stdout, 1, 1)
+    term.cursor.jump(io.stdout, 1, 1)
     term.cursor.goup(1)
     term.cursor.godown(1)
     term.cursor.goright(1)
