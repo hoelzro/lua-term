@@ -23,12 +23,18 @@ local tostring = tostring
 local setmetatable = setmetatable
 local schar = string.char
 
+local function iswindows()
+    return type(package) == 'table' and type(package.config) == 'string' and package.config:sub(1,1) == '\\'
+end
+
+local supported = not iswindows() or os.getenv("ANSICON")
+
 local colors = {}
 
 local colormt = {}
 
 function colormt:__tostring()
-    return self.value
+    return supported and self.value or ''
 end
 
 function colormt:__concat(other)
