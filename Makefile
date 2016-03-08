@@ -1,7 +1,7 @@
 #this file builds lua-term \o/
 
-LUA_VER		:= 5.1
-LUA_DIR		:= /usr
+LUA_VER		?= 5.1
+LUA_DIR		?= /usr
 LUA_LIBDIR	:= $(LUA_DIR)/lib/lua/$(LUA_VER)/term
 LUA_INC		:= $(LUA_DIR)/include/lua$(LUA_VER)
 LUA_SHARE	:= $(LUA_DIR)/share/lua/$(LUA_VER)/term
