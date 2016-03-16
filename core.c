@@ -1,3 +1,5 @@
+#define _POSIX_SOURCE
+
 #include <lua.h>
 #include <lauxlib.h>
 #include <lualib.h>
