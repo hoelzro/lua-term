@@ -1,7 +1,9 @@
 #include <lua.h>
 #include <lauxlib.h>
 #include <lualib.h>
-#include <unistd.h>
+#ifndef _MSC_VER
+# include <unistd.h>
+#endif
 
 static int
 lua_isatty(lua_State *L)
