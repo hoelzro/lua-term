@@ -1,3 +1,9 @@
+0.05 2016-04-03 15:50:00
+    - Don't include unistd.h on Windows
+
+0.04 2016-03-06 16:25:47
+    - Include missing unistd.h header file
+
 0.03 2014-04-02 08:00:00
     - Fix syntax error for term.cursor.goto for Lua 5.2
     - Add jump as an alias for goto
