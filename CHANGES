@@ -1,3 +1,6 @@
+0.05 2016-04-04 20:00:00
+    - Fix compilation flags for Lua 5.3
+
 0.05 2016-04-03 15:50:00
     - Don't include unistd.h on Windows
 
