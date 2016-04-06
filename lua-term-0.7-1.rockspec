@@ -1,9 +1,9 @@
 package = 'lua-term'
-version = '0.6-1'
+version = '0.7-1'
 
 source = {
-  url = 'https://github.com/hoelzro/lua-term/archive/0.06.tar.gz',
-  dir = 'lua-term-0.06',
+  url = 'https://github.com/hoelzro/lua-term/archive/0.07.tar.gz',
+  dir = 'lua-term-0.07',
 }
 
 description = {
