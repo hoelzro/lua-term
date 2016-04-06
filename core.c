@@ -1,4 +1,4 @@
-#define _POSIX_SOURCE
+#define _POSIX_C_SOURCE 200112L
 
 #include <lua.h>
 #include <lauxlib.h>
