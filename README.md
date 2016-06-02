@@ -8,6 +8,28 @@ Installation
 
 lua-term is available on Luarocks.
 
+
+## OpenBSD
+
+lua-term is available as an OpenBSD package. Use the proper Lua flavour to
+get the package for your Lua version:
+
+```
+# For Lua 5.1
+$ doas pkg_add -r lua-term
+# For Lua 5.2
+$ doas pkg_add -r lua52-term
+# For Lua 5.3
+$ doas pkg_add -r lua53-term
+```
+
+Or install from ports:
+
+```
+$ cd /usr/ports/devel/lua-term
+$ env FLAVOR=lua51 doas make install
+```
+
 Usage
 -----
 
