@@ -30,6 +30,18 @@ $ cd /usr/ports/devel/lua-term
 $ env FLAVOR=lua51 doas make install
 ```
 
+## openSUSE
+lua-term is available in the `devel:languages:lua` devel project on [OBS](https://build.opensuse.org/package/show/devel:languages:lua/lua-luaterm).
+
+Add the repository and install lua-term via:
+```
+zypper addrepo http://download.opensuse.org/repositories/devel:/languages:/lua/openSUSE_Tumbleweed/devel:languages:lua.repo
+zypper refresh
+zypper in lua-luaterm
+```
+
+Adjust the repository URL to your version of openSUSE by substituting `openSUSE_Tumbleweed` with your actual version eg `opensSUSE_42.2`.
+
 Usage
 -----
 
