@@ -44,6 +44,7 @@ term.cursor = require 'term.cursor'
 
 term.clear    = term.maketermfunc '2J'
 term.cleareol = term.maketermfunc 'K'
+term.clearend = term.maketermfunc 'J'
 
 term.maketermfunc = nil
 
