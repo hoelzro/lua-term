@@ -1,3 +1,8 @@
+0.08 2023-12-29 12:00
+    - Add clearend function
+    - Fix bad argument handling in isatty (https://github.com/hoelzro/lua-term/pull/18 - thanks @mpeterv!)
+    - Fix motion functions to correctly implement ANSI escape sequences (https://github.com/hoelzro/lua-term/pull/19 - thanks @edouardelasalles!)
+
 0.07 2016-04-05 22:00:00
     - Fix compilation errors for Lua 5.3 on GCC < 5.0
 
