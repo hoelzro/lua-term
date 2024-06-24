@@ -18,6 +18,19 @@
 -- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 -- THE SOFTWARE.
 
+do -- set console to utf-8 and enable ANSI escape sequences on Windows
+  local ok, sys = pcall(require, "system")
+  if ok and sys.setconsoleflags and sys.windows then
+    sys.setconsoleoutputcp(sys.CODEPAGE_UTF8)
+    if sys.isatty(io.stdout) then
+      sys.setconsoleflags(io.stdout, sys.getconsoleflags(io.stdout) + sys.COF_VIRTUAL_TERMINAL_PROCESSING)
+    end
+    if sys.isatty(io.stderr) then
+      sys.setconsoleflags(io.stderr, sys.getconsoleflags(io.stderr) + sys.COF_VIRTUAL_TERMINAL_PROCESSING)
+    end
+  end
+end
+
 local term    = require 'term.core'
 local sformat = string.format
 local iotype  = io.type
