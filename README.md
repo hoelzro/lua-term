@@ -42,6 +42,12 @@ zypper in lua-luaterm
 
 Adjust the repository URL to your version of openSUSE by substituting `openSUSE_Tumbleweed` with your actual version eg `opensSUSE_42.2`.
 
+## Windows
+
+lua-term works on Windows as well when virtual terminal processing is enabled. To have this enabled automatically ensure that
+[LuaSystem](https://github.com/lunarmodules/luasystem) is installed (version 0.4.0 or newer). If found, that module will be used
+to enable virtual terminal processing and to switch output to utf-8.
+
 Usage
 -----
 
